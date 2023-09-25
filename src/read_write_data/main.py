@@ -14,7 +14,7 @@ nb_data_request = {
 flightInfo = itcfs.get_flight_info(readClient, nb_data_request=nb_data_request)
 
 data_df = itcfs.read_pandas_and_concat(readClient, flightInfo, timeout=240)
-data_df_sample = data_df.head(3)
+data_df_sample = data_df.head(4)
 print(data_df_sample)
 
 # Import the lib
